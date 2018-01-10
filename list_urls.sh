@@ -5,7 +5,7 @@
 
 fileList=(
 files/testfile1.html
-files/testfile2.html∑
+#files/testfile2.html∑
 )
 
 
@@ -23,7 +23,7 @@ IGNORECASE=1
       print var "|" $(o)
     }
   }
-}' "$1"  
+}' "$1"
 
 }
 
@@ -33,9 +33,8 @@ IGNORECASE=1
 for i in ${fileList[@]}
 
 
-do 
+do
 	extractURLs $i
-done 
+done
 
 echo "Done."
-
